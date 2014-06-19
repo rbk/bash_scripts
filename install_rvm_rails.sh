@@ -1,4 +1,5 @@
 sudo apt-get update;
+sudo apt-get install nodejs
 sudo apt-get install curl;
 curl -L get.rvm.io | bash -s stable;
 echo '';
