@@ -1,4 +1,4 @@
-# Other bash scripts
+# Other bash scripts/shell commands
 
 ## Too cool
 
