@@ -1,5 +1,11 @@
 # Other bash scripts/shell commands
 
+## <? to <?php (Recursively)
+
+find . -type f -print0 | xargs -0 sed -i 's/<?=/<?php echo /g';
+find . -type f -print0 | xargs -0 sed -i 's/<?/<?php/g';
+find . -type f -print0 | xargs -0 sed -i 's/phpphp/php/g';
+
 ## Top Ten Largest Files/Folders
 
 `du -hsx * | sort -rh | head -10`
