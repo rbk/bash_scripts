@@ -1,5 +1,10 @@
 # Other bash scripts/shell commands
 
+## String replace function
+function str_replace( $1, $2 ){
+  find . -type f -print0 | xargs -0 sed -i 's/$1/$2/g'
+}
+
 ## <? to <?php (Recursively)
 
 `find . -type f -print0 | xargs -0 sed -i 's/<?=/<?php echo /g';`
