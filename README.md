@@ -45,3 +45,6 @@ Recursive string replace:
 
 `find . -type f -print0 | xargs -0 sed -i 's/<search>/<replace>/g'`
 
+## Show all Vhosts setup in apache
+
+`apachectl -t -D DUMP_VHOSTS`
