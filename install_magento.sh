@@ -1,18 +1,18 @@
-# Magento Install
+# Magento Install - finished
+# You must be the root user.
+# apache2, php, phpmyadmin, mysql, git
 
-apache2, php, phpmyadmin, mysql, git
+apt-get update
+apt-get install apache2
+apt-get install mysql-server php5-mysql
+mysql_install_db
+mysql_secure_installation
 
-sudo apt-get update
-sudo apt-get install apache2
-sudo apt-get install mysql-server php5-mysql
-sudo mysql_install_db
-sudo mysql_secure_installation
+apt-get install php5 libapache2-mod-php5 php5-mcrypt libcurl3 php5-curl php5-gd
 
-sudo apt-get install php5 libapache2-mod-php5 php5-mcrypt libcurl3 php5-curl php5-gd
-
-sudo apt-get install phpmyadmin
-sudo nano /etc/apache2/apache2.conf
- > Include /etc/phpmyadmin/apache.conf
+apt-get install phpmyadmin
+nano /etc/apache2/apache2.conf
+ 	> Include /etc/phpmyadmin/apache.conf
 sudo service apache2 restart
 
 sudo nano /etc/apache2/mods-enabled/dir.conf
