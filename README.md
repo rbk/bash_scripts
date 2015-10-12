@@ -17,7 +17,7 @@ function str_replace( $1, $2 ){
 
 `du -hsx * | sort -rh | head -10`
 
-## Too cool
+## Better git log, just type git lg in a repository folder and see.
 
 `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"`
 
