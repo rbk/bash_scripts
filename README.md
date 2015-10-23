@@ -51,6 +51,8 @@ Recursive string replace:
 
 ## Permissions
 
+Credit to Mason Frakes @ github.com/Novemburr
+
 ```
 function permissions() {
 echo 'who should own the directory tree?';
