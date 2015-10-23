@@ -51,11 +51,13 @@ Recursive string replace:
 
 ## Permissions
 
-`function permissions() {`
-`echo 'who should own the directory tree?';`
-`read owner;`
-`sudo chown -R $owner:$owner $1;`
-`sudo find $1 -type d -exec chmod 755 {} \;`
-`sudo find $1 -type f -exec chmod 644 {} \;`
-`}`
-`alias perms='permissions';`
+```
+function permissions() {
+echo 'who should own the directory tree?';
+read owner;
+sudo chown -R $owner:$owner $1;
+sudo find $1 -type d -exec chmod 755 {} \;
+sudo find $1 -type f -exec chmod 644 {} \;
+}
+alias perms='permissions';
+```
