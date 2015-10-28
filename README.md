@@ -63,3 +63,7 @@ sudo find $1 -type f -exec chmod 644 {} \;
 }
 alias perms='permissions';
 ```
+
+## List size of all directories in current folder and sort by size
+
+`du -a -h --max-depth=1 | sort -hr`
