@@ -67,3 +67,7 @@ alias perms='permissions';
 ## List size of all directories in current folder and sort by size
 
 `du -a -h --max-depth=1 | sort -hr`
+
+## Weather, thanks to someone
+
+`weather(){ curl -s "http://api.wunderground.com/auto/wui/geo/ForecastXML/index.xml?query=${@:-74133}"|perl -ne '/<title>([^<]+)/&&printf "%s: ",$1;/<fcttext>([^<]+)/&&print $1,"\n"';}`
