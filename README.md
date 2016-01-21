@@ -1,5 +1,9 @@
 # Other bash scripts/shell commands
 
+## Pretend you are Mozilla, download entire websites
+
+`wget -r -p -U Mozilla <url>`
+
 ## String replace function
 function str_replace( $1, $2 ){
   find . -type f -print0 | xargs -0 sed -i 's/$1/$2/g'
