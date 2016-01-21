@@ -1,6 +1,6 @@
 # Other bash scripts/shell commands
 
-## List all files changed within the last 30 minutes (current directory, recursive)
+### List all files changed within the last 30 minutes (current directory, recursive)
 
 `find . -type d -name .git -prune -o -mmin -30 -type f -print`
 
