@@ -1,5 +1,9 @@
 # Other bash scripts/shell commands
 
+## List all files changed within the last 30 minutes (current directory, recursive)
+
+`find . -type d -name .git -prune -o -mmin -30 -type f -print`
+
 ## Pretend you are Mozilla, download entire websites
 
 `wget -r -p -U Mozilla <url>`
