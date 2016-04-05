@@ -1,5 +1,16 @@
 # Other bash scripts/shell commands
 
+#### Remove '?123123' from the end of all files in the current directory
+
+```
+for file in *
+do
+	echo $file
+    new=$(echo $file | sed -e 's/\?[0-9]*$//')
+    mv -v "$file" "$new"
+ done
+```
+
 #### List all files changed within the last 30 minutes (current directory, recursive)
 
 `find . -type d -name .git -prune -o -mmin -30 -type f -print`
