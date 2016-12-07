@@ -1,4 +1,8 @@
-# Other bash scripts/shell commands
+# Bash
+
+# Replace file extension for every file in current directory
+
+`find . -iname "*.mustache" -exec bash -c 'mv "$0" "${0%\.mustache}.php"' {} \;`
 
 #### Remove '?123123' from the end of all files in the current directory
 
