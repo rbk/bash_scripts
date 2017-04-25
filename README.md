@@ -1,5 +1,10 @@
 # Bash
 
+## Resize files with imagemagikc and shell
+
+1. `find . -type f -name "*.jpg" -exec convert "{}" -quality 50 -resize 255 "{}.tmp" \;`
+2. `find . -iname "*.jpg.tmp" -exec bash -c 'mv "$0" "${0//\.thm\.jpg/thm\.jpg}"' {} \;`
+
 ## Replace file extension for every file in current directory
 
 `find . -iname "*.mustache" -exec bash -c 'mv "$0" "${0%\.mustache}.php"' {} \;`
