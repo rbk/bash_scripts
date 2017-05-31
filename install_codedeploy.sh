@@ -25,10 +25,6 @@ cd /var/www/html && curl -fSL "https://ftp.drupal.org/files/projects/drupal-8.3.
 mkdir /var/www/html/sites/default/files
 chmod -R 777 /var/www/html/sites/default/files
 
-# Setup group and permissions
+# Add www group and ecs-user ot group
 groupadd www
 usermod -a -G www ec2-user
-chown -R ec2-user:www /var/www
-chmod 2775 /var/www
-find /var/www -type d -exec sudo chmod 2775 {} \;
-find /var/www -type f -exec sudo chmod 0664 {} \;
