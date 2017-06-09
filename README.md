@@ -1,5 +1,9 @@
 # Bash
 
+## File count of current directory, recursize:
+
+`find . -print | wc -l`
+
 ## Resize files with imagemagikc and shell
 
 1. `find . -type f -name "*.jpg" -exec convert "{}" -quality 50 -resize 255 "{}.tmp" \;`
