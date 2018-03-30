@@ -1,5 +1,9 @@
 # Bash
 
+## Generate an SSH key
+
+`ssh-keygen -t rsa -b 4096 -o -a 100`
+
 ## File count of current directory, recursize:
 
 `find . -print | wc -l`
