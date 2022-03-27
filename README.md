@@ -1,5 +1,13 @@
 # Bash
 
+## Most used commands
+
+1. Reset current project state completely - `git reset --hard`
+2. Connect to a remove server - `ssh name@0.0.0.0`
+3. Search shell history - `history | grep search-term`
+4. Wander - `cd..`
+5. List files - `ls -al`
+
 ## Generate an SSH key
 
 `ssh-keygen -t rsa -b 4096 -o -a 100`
