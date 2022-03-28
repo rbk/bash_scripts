@@ -7,6 +7,7 @@
 3. Search shell history - `history | grep search-term`
 4. Wander - `cd..`
 5. List files - `ls -al`
+6. Search for a file by name recursively (current directory) - `find . -name  filename.txt`
 
 ## Generate an SSH key
 
