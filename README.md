@@ -1,5 +1,7 @@
 # Bash
 
+Some of these are for mac and some are for linux!
+
 ## Most used commands
 
 1. Reset current project state completely - `git reset --hard`
@@ -9,8 +11,17 @@
 5. List files - `ls -al`
 6. Search for a file by name recursively (current directory) - `find . -name  filename.txt`
 
+
+## Search your history
+
+`history | grep searchString`
+
 ## Generate an SSH key
 
+### Simple
+`ssh-keygen`
+
+### Advanced
 `ssh-keygen -t rsa -b 4096 -o -a 100`
 
 ## File count of current directory, recursize:
