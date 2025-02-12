@@ -1,6 +1,8 @@
 # Bash
 
-Some of these are for mac and some are for linux!
+## Download a font from google via terminal
+
+`wget -rH -o ./output.txt "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quattrocento:wght@400;700&display=swap" --no-check-certificate`
 
 ## Most used commands
 
