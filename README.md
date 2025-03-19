@@ -124,6 +124,12 @@ alias perms='permissions';
 
 ## List size of all directories in current folder and sort by size
 
+**Mac**
+
+`du -sh * | sort -h`
+
+**Linux**
+
 `du -a -h --max-depth=1 | sort -hr`
 
 ## Weather, thanks to someone
